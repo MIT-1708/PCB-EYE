@@ -1,0 +1,16 @@
+# PCB Defect Detection Dependencies
+# Developed by MIT PATEL
+
+opencv-python-headless
+numpy
+streamlit
+Pillow
+pyyaml
+matplotlib
+scikit-learn
+scikit-image
+tqdm
+torch
+ultralytics
+supervision
+plotly

@@ -18,6 +18,9 @@ try:
 except ImportError:
     STREAMLIT_AVAILABLE = False
 
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 from data_preparation import PCBDataPreparator
 from model import PCBDefectDetector
 
@@ -277,7 +280,7 @@ if __name__ == "__main__":
         print("LinkedIn: https://www.linkedin.com/in/raj-patel5")
         
         # Import and run the web interface
-        from web_interface import PCBDefectWebInterface
+        from src.web_interface import PCBDefectWebInterface
         
         app = PCBDefectWebInterface()
         app.main()
